@@ -1,7 +1,15 @@
-from classes import *
-from events import DialogMessage, StatusMessage
-from bot_handler import BotHandler, Message
+# from classes import *
+# from events import DialogMessage, StatusMessage
+# from bot_handler import BotHandler, Message
 import random, os, traceback
+from game.classes import mage, rogue, warrior
+from mage import Mage
+from rogue import Rogue
+from warrior import Warrior
+from game.classes.monsters import Monster, GreaterMonster
+from game.items.item import CommonItem, RareItem
+from game.events.events import DialogMessage, StatusMessage
+from game.bot.bot_handler import BotHandler, Message
 
 TOKEN = os.environ["TOKEN"]
 
